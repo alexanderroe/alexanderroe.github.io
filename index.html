@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alexander Roe</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        
+    </head>
+    <body>
+        私のウェブサイトです。
+        <a href="https://courses.illinois.edu">course explorer</a>.
+        <p>Hello World</p>
+        <h1>Blue text</h1>
+        <input id="in">
+        <input type="submit" value="enter" class="enter">
+        <p class="incopy"></p>
+        <script>
+            const input = document.querySelector('in');
+            const incopy = document.querySelector('.incopy');
+            const enter = document.querySelector('.enter');
+            
+            enter.addEventListener('click', func);
+            
+            function func() {
+                console.log('here');
+                incopy.textContent = 'asasdfa23df';
+            }
+        </script>
+    </body>
+</html>
+
+
