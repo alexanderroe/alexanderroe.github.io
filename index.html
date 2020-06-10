@@ -1,41 +1,50 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Alexander Roe</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div>
-            <p>
-                <a href="index2.html">Link to another page?</a>
-            </p>
-            <p id="intro">
-                Hello! My name is Alexander Roe. I'm currrently studying mathematics and computer science at the University of Illinois at Urbana-Champaign.
-                Most recently, I was a course assistant for <a href="https://courses.grainger.illinois.edu/cs126/sp2020/">CS 126</a>, a software design class.
-            </p>
-            <p id="interests">
-                I'm most interested in exploring the musical applications
-                of computer science. I also have general interests in 
-                number theory, machine learning, and intuitive learning
-                through visualizations.
-            </p>
-            <p id="notes">
-                Here's a collection of notes from some classes I've taken at UIUC: <br>
-                LaTeX: <br>
-                Math 347 - Fundamental Mathematics <br>
-                Math 441 - Differential Equations <br>
-                GitHub: <br>
-                CS 225 - Data Structures <br>
-                CS 233 - Computer Architecture (Only Exam 6 and later) <br>
-            </p>
-            <p id="links">
-                External links: <br>
-                Email: roe3@illinois.edu <br>
-                Github: github.com/alexanderroe
-            </p>
-    </body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="index.css">
+		<script src="index.js"></script>
+		<title>
+			Alexander Roe
+		</title>
+	</head>
+	<body onload="changeContent('home')">
+		<div id="columns">
+			<div id="leftmargin"></div>
+
+			<div id="tabs">
+				<div id="nametitle">
+					Alexander Roe <br>
+				</div>
+				<button onclick="changeContent('home')">Home</button> <br>
+				<button onclick="changeContent('notes')">Notes</button> <br>
+				<button onclick="changeContent('projects')">Projects</button> <br>
+				<button onclick="changeContent('music')">Music</button> <br>
+
+				<!-- icons: email, github, resume, stackexchange? -->
+				<!-- en/jp, light/dark -->
+			</div>
+
+			<div id="contents">
+				<div class="content" id="home">
+					I am currently pursuing a bachelor's degree in Computer Science and Mathematics at the University of Illinois at Urbana-Champaign.
+
+				</div>
+				<div class="content" id="notes">
+					Here are a collection of notes from courses I've taken at UIUC: <br>
+					Math 347 - <a href="notes/347notes.pdf">Fundamental Mathematics</a> (incomplete, about 50% done) <br>
+					Math 441 - <a href="notes/441notes.pdf">Differential Equations</a> (also incomplete, about 90% done) <br>
+					Math 461 - <a href="notes/461notes.pdf">Probability Theory</a>(in progress) <br>
+				</div>
+				<div class="content" id="projects">
+					projects content
+				</div>
+				<div class="content" id="music">
+					music content
+				</div>
+			</div>
+
+			<div id="rightmargin"></div>
+		</div>
+	</body>
 </html>
-
-
