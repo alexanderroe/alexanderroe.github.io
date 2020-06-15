@@ -9,69 +9,94 @@ html, body {
 #leftmargin {
     float: left;
     width: 17.5%;
-    background: rgb(0, 80, 140);
+    background: antiquewhite;
     height: 100%;
     overflow: auto;
     box-sizing: border-box;
-    padding: 0.4em;
 }
 #tabs {
     float: left;
     width: 25%;
-    background: rgb(0, 80, 140);
+    background: antiquewhite;
     height: 100%;
     overflow: auto;
     box-sizing: border-box;
-    padding: 0.4em;
     text-align: center;
-    padding-top: 30px;
-    border: solid gray;
-    line-height: 3;
     font-size: 18px;
-    letter-spacing: 2px;
 }
 #contents {
     float: left;
     width: 40%;
-    background: rgb(0, 80, 140);
+    background: antiquewhite;
     height: 100%;
     overflow: auto;
     box-sizing: border-box;
-    padding: 0.4em;
     text-align: center;
     padding-top: 100px;
-    border: solid gray;
+    font-family: "Cantarell";
 }
 #rightmargin {
     float: left;
     width: 17.5%;
-    background: rgb(0, 80, 140);
+    background: antiquewhite;
     height: 100%;
     overflow: auto;
     box-sizing: border-box;
-    padding: 0.4em;
 }
 #nametitle {
+    padding-top: 30px;
+    padding-bottom: 20px;
     font-size: 36px;
-}
-button {
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:0.1em solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:rgb(126, 46, 46);
-    text-align:center;
-    transition: all 0.2s;  
-}
-button:hover{
-    color:#000000;
-    background-color:#FFFFFF;
+    font-family: "Cantarell";
+    font-size: 36px;
+    line-height: 1.2;
 }
 #notes {
-    line-height: 2;
+    line-height: 2.5;
+}
+.tab {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    flex-grow:1;
+    font-family: "Cantarell";
+    text-decoration: none;
+}
+.tab:visited {
+    color: black;
+}
+.tab:hover {
+    background-color: black;
+    color: antiquewhite;
+    transition: all 0.5s;
+}
+.notelink {
+    padding: 2px 5px 2px 5px;
+}
+.notelink:visited {
+    color: black;
+}
+.notelink:hover {
+    color: antiquewhite;
+    background-color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+#divider1 {
+    border-left: 2px solid black;
+    height: 100%;
+    position: absolute;
+    left: 17.5%;
+}
+#divider2 {
+    border-left: 2px solid black;
+    height: 100%;
+    position: absolute;
+    left: 42.5%;
+}
+#divider3 {
+    border-left: 2px solid black;
+    height: 100%;
+    position: absolute;
+    left: 84%;
 }
