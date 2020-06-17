@@ -8,7 +8,7 @@ html, body {
 }
 #leftmargin {
     float: left;
-    width: 17.5%;
+    width: 20%;
     background: antiquewhite;
     height: 100%;
     overflow: auto;
@@ -16,7 +16,7 @@ html, body {
 }
 #tabs {
     float: left;
-    width: 25%;
+    width: 20%;
     background: antiquewhite;
     height: 100%;
     overflow: auto;
@@ -24,7 +24,7 @@ html, body {
     text-align: center;
     font-size: 18px;
 }
-#contents {
+#content-container {
     float: left;
     width: 40%;
     background: antiquewhite;
@@ -35,9 +35,13 @@ html, body {
     padding-top: 100px;
     font-family: "Cantarell";
 }
+#actualcontent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
 #rightmargin {
     float: left;
-    width: 17.5%;
+    width: 20%;
     background: antiquewhite;
     height: 100%;
     overflow: auto;
@@ -46,9 +50,8 @@ html, body {
 #nametitle {
     padding-top: 30px;
     padding-bottom: 20px;
-    font-size: 36px;
     font-family: "Cantarell";
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2;
 }
 #notes {
@@ -86,17 +89,17 @@ html, body {
     border-left: 2px solid black;
     height: 100%;
     position: absolute;
-    left: 17.5%;
+    left: 20%;
 }
 #divider2 {
     border-left: 2px solid black;
     height: 100%;
     position: absolute;
-    left: 42.5%;
+    left: 40%;
 }
 #divider3 {
     border-left: 2px solid black;
     height: 100%;
     position: absolute;
-    left: 84%;
+    left: 80%;
 }
