@@ -1,105 +1,72 @@
-html, body {
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
+html {
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
 }
-#columns {
-    height: 100%;
-}
-#leftmargin {
-    float: left;
-    width: 20%;
-    background: antiquewhite;
-    height: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-}
-#tabs {
-    float: left;
-    width: 20%;
-    background: antiquewhite;
-    height: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 18px;
-}
-#content-container {
+
+#col1 {
     float: left;
     width: 40%;
-    background: antiquewhite;
-    height: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-    text-align: center;
-    padding-top: 100px;
-    font-family: "Cantarell";
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
-#actualcontent {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-#rightmargin {
+
+#col2 {
     float: left;
-    width: 20%;
-    background: antiquewhite;
-    height: 100%;
-    overflow: auto;
-    box-sizing: border-box;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
-#nametitle {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    font-family: "Cantarell";
-    font-size: 30px;
-    line-height: 1.2;
+
+#intro-cont {
+    margin-left: 60px;
+    
 }
-#notes {
-    line-height: 2.5;
+
+#main-cont {
+    margin-left: 60px;
+    
 }
-.tab {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-    flex-grow:1;
-    font-family: "Cantarell";
-    text-decoration: none;
+
+#line {
+    margin-top: -10px;
+
+    border: 1px solid black;
+    float: left;
+    width: 50%
 }
-.tab:visited {
-    color: black;
+
+#hi {
+    font-size: large;
+    font-weight: bolder;
 }
-.tab:hover {
-    background-color: black;
-    color: antiquewhite;
-    transition: all 0.5s;
+
+#port-title {
+    font-size: x-large;
+    font-weight: bolder;
 }
-.notelink {
-    padding: 2px 5px 2px 5px;
+
+#gh {
+    color: gray;
 }
-.notelink:visited {
-    color: black;
+
+#name {
+    font-size: xx-large;
+    font-weight: bolder;
 }
-.notelink:hover {
-    color: antiquewhite;
-    background-color: black;
-    text-decoration: none;
-    transition: all 0.5s;
+
+#siebel {
+    float: right;
+    margin-right: 75px;
+    align-self:flex-start
 }
-#divider1 {
-    border-left: 2px solid black;
-    height: 100%;
-    position: absolute;
-    left: 20%;
-}
-#divider2 {
-    border-left: 2px solid black;
-    height: 100%;
-    position: absolute;
-    left: 40%;
-}
-#divider3 {
-    border-left: 2px solid black;
-    height: 100%;
-    position: absolute;
-    left: 80%;
+
+#row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }

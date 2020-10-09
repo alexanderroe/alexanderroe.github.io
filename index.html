@@ -1,57 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell">
-        <script src="index.js"></script>
+        <meta charset="utf-8">
         <title>Alexander Roe</title>
+        <link rel="stylesheet" href="index2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pts/0.9.5/pts.min.js"></script>
     </head>
     <body>
-        <div id="columns">
-            <div id="leftmargin"></div>
-            <div id="divider1"></div>
-            <div id="tabs">
-                <div id="nametitle">
-                    Alexander Roe <br>
-                </div>
-                <div id="navlinks">
-                    <a class="tab" href="index.html">Home</a>
-                    <br>
-                    <a class="tab" href="notes.html">Notes</a>
-                    <br>
-                    <a class="tab" href="projects.html">Projects</a>
-                    <br>
-                    <a class="tab" href="music.html">Music</a>
-                    <br>
-<!--                <a class="icon" href="https://github.com/alexanderroe">
-                        <img src="images/github.png" height=35 width=35>
-                    </a> -->
-                    <!-- <div class="iconspace"></div>
-                    <a class="icon" href="mailto:roe3@illinois.edu">
-                        <img src="images/mail.png" height=35 width=35>
-                    </a>
-                    <div class="iconspace"></div>
-                    <a class="icon" href="Resume.pdf">
-                        <img src="images/resume.png" height=35 width=35>
-                    </a> -->
-                    <!-- icons: email, github, resume, stackexchange? -->
-                    <!-- en/jp, light/dark -->
-                </div>
+    <div id="row">
+        <div id="col1">
+            <div id="intro-cont">
+                <h1 id="name">Alexander Roe</h1>
+                <hr id="line">
+               <br>
+                <span id="hi">Hi!</span> I'm an undergraduate student studying<br>
+                computer science and mathematics at<br>
+                the <span id="uiuc">University of Illinois at Urbana-Champaign.</span>
+                <br><br>
+                My research interests include anything at the intersection of math and <br>
+                computer science. 
+                <br><br>
+                I am also a course assistant for CS 126, "Software Design Studio".
             </div>
-            <div id="divider2"></div>
-            <div id="content-container">
-                <div id="actualcontent">
-                    I am currently pursuing a bachelor's degree in Computer Science and Mathematics at the University of Illinois at Urbana-Champaign. <br>
-                    <br>
-                    My interests include machine learning and number theory.
-                    Most recently, I was a course assistant for CS 126, a software design class at UIUC.
-					""
-
-                </div>
+            <div id="main-cont">
+                <br><br>
+                <span id="port-title">Major/Minor Progress Checker.</span><br>
+                A <a href="https://dars-analyzer.herokuapp.com/">web application</a> that creates a data visualization, which shows<br>
+                you which minors at UIUC you are closest to completing, based on<br>
+                the classes you've already taken. The source code is on <a href="https://github.com/AshankKumar/DarsReportAnalyzer">GitHub</a>.
+                <br><br>
+                <span id="port-title">Notes on Ordinary Differential Equations.</span><br>
+                Based on Math 441 at UIUC, these LaTeX notes cover topics like<br>
+                ODEs, systems of ODEs, and linearization.
             </div>
-            <div id="divider3"></div>
-            <div id="rightmargin"></div>
         </div>
+        <div id="col2">
+            <img src="siebel.png" id="siebel">
+            <canvas id="c"></canvas>
+        </div>
+    </div>
+        <script>
+            Pts.namespace(window);
+            var space = new CanvasSpace('#c');
+            space.setup({ bgcolor: '#fef' });
+            let form = space.getForm();
+
+            space.add( (time, ftime) => {
+                form.stroke("#fff").fill("#f03").circle( c );
+                form.point( p, 10 );   
+            });
+            
+        </script>
     </body>
 </html>
