@@ -70,3 +70,8 @@ html {
     flex-wrap: wrap;
     width: 100%;
 }
+
+#c {
+    max-height: 1000px;
+    max-weight: 1000px;
+}

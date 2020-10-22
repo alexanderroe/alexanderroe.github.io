@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Alexander Roe</title>
-        <link rel="stylesheet" href="index2.css">
+        <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pts/0.9.5/pts.min.js"></script>
+        <script src="granim.js"></script>
     </head>
     <body>
     <div id="row">
@@ -20,9 +21,9 @@
                 the <span id="uiuc">University of Illinois at Urbana-Champaign.</span>
                 <br><br>
                 My research interests include anything at the intersection of math and <br>
-                computer science. 
+                computer science.
                 <br><br>
-                I am also a course assistant for CS 126, "Software Design Studio".
+                I am also a course assistant for <a href="https://courses.engr.illinois.edu/cs126/fa2020/">CS 126</a>, "Software Design Studio".
             </div>
             <div id="main-cont">
                 <br><br>
@@ -38,20 +39,24 @@
         </div>
         <div id="col2">
             <img src="siebel.png" id="siebel">
-            <canvas id="c"></canvas>
+            <canvas id="granim-canvas"></canvas>
+
         </div>
     </div>
         <script>
-            Pts.namespace(window);
-            var space = new CanvasSpace('#c');
-            space.setup({ bgcolor: '#fef' });
-            let form = space.getForm();
-
-            space.add( (time, ftime) => {
-                form.stroke("#fff").fill("#f03").circle( c );
-                form.point( p, 10 );   
-            });
-            
+                       var granimInstance = new Granim({
+   element: '#granim-canvas',
+   name: 'granim',
+   opacity: [1, 1],
+   states : {
+       "default-state": {
+           gradients: [
+               ['#834D9B', '#D04ED6'],
+               ['#1CD8D2', '#93EDC7']
+           ]
+       }
+   }
+});
         </script>
     </body>
 </html>
