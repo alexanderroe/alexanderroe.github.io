@@ -23,12 +23,12 @@ html {
 
 #intro-cont {
     margin-left: 60px;
-    
+
 }
 
 #main-cont {
     margin-left: 60px;
-    
+
 }
 
 #line {
@@ -74,4 +74,8 @@ html {
 #c {
     max-height: 1000px;
     max-weight: 1000px;
+}
+
+figcaption {
+    text-align: center;
 }
